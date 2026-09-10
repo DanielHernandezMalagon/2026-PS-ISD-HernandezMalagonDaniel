@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera Petición GET - Reporte</title>
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Práctica: Primera Petición GET</h1>
+
+    <div class="section">
+        <h2>1. ¿Se conectó el servidor?</h2>
+        <p><strong>Sí, la conexión fue exitosa.</strong> La petición HTTP mediante el método GET se envió correctamente a la API hospedada en Render (<code>proyectobackcecyt9.onrender.com</code>), devolviendo un estado HTTP de respuesta satisfactorio.</p>
+    </div>
+
+    <div class="section">
+        <h2>2. Explicación del Proceso</h2>
+        <p>Al ejecutar el script de Node.js (<code>01cliente.js</code>), se empleó la API nativa <code>fetch</code> para solicitar los recursos alojados en la ruta <code>/api/talleres</code>. Durante el ciclo de petición-respuesta se midió el tiempo de ida y vuelta (Round Trip Time / RTT) desde la solicitud inicial hasta la llegada de la respuesta. Finalmente, los datos obtenidos en formato JSON se procesaron y mostraron en la consola con un formato legible empleando <code>JSON.stringify()</code>.</p>
+    </div>
+
+    <div class="section">
+        <h2>3. Elementos Obtendidos</h2>
+        <p>Se recibió un arreglo con el catálogo de talleres disponibles en el backend. Cada elemento incluye los siguientes datos:</p>
+        <ul>
+            <li><strong>id:</strong> Identificador único del taller (UUID).</li>
+            <li><strong>nombre:</strong> Nombre de la materia o taller (ej. <i>Diseño de Bases de Datos</i>).</li>
+            <li><strong>instructor:</strong> Nombre del profesor asignado.</li>
+            <li><strong>fecha:</strong> Fecha programada.</li>
+            <li><strong>cupo:</strong> Cantidad de lugares disponibles.</li>
+            <li><strong>created_at:</strong> Marca de tiempo de la creación del registro.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>4. Captura de Pantalla</h2>
+        <p>A continuación se muestra la evidencia de la ejecución exitosa en la terminal de Visual Studio Code:</p>
+        <img src="./imgPeticionGet.png" alt="Evidencia de ejecución en la terminal">
+    </div>
+
+</body>
+</html>
