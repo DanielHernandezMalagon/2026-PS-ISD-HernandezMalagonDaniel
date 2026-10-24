@@ -3,101 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de evidencias de Hernández Malagón Daniel</title>
-    <style>
-        body {
-            font-family: "Segoe UI", Arial, sans-serif;
-            background: #f4f6f9;
-            color: #1f2937;
-            margin: 0;
-            line-height: 1.5;
-        }
-        .container { max-width: 960px; margin: 0 auto; padding: 32px 16px 48px; }
-        .titulo h1 { margin: 0 0 4px; font-size: 1.7rem; }
-        .titulo p { margin: 0 0 28px; color: #6b7280; }
-        h2 { font-size: 1.15rem; margin: 28px 0 10px; }
-        .tabla-envoltura { overflow-x: auto; }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-        }
-        th, td { padding: 10px 14px; text-align: left; border-bottom: 1px solid #e5e7eb; vertical-align: top; }
-        th { background: #2563eb; color: #fff; font-weight: 600; }
-        tr:last-child td { border-bottom: none; }
-        td.vacio { color: #9ca3af; font-style: italic; }
-        a { color: #2563eb; text-decoration: none; font-weight: 600; margin-right: 12px; white-space: nowrap; }
-        a:hover { text-decoration: underline; }
-    </style>
+    <title>Portafolio de evidencias · Hernández Malagón Daniel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="content">
-            <div class="titulo">
-                <h1>Portafolio de evidencias de Hernández Malagón Daniel</h1>
-                <p>Ejercicios y prácticas del semestre 2026</p>
-            </div>
-            <div class="tablas">
-                <h2>PS</h2>
-                <div class="tabla-envoltura">
-                    <table class="tablaps">
-                        <thead>
-                            <tr>
-                                <th>Ejercicios</th>
-                                <th>Descripción</th>
-                                <th>Enlaces</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="vacio" colspan="3">Aún no hay ejercicios</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <h2>ISD</h2>
-                <div class="tabla-envoltura">
-                    <table class="tablaisd">
-                        <thead>
-                            <tr>
-                                <th>Ejercicios</th>
-                                <th>Descripción</th>
-                                <th>Enlaces</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Primera petición GET</td>
-                                <td>Cliente en Node.js que consume la API de talleres con fetch y mide el tiempo de ida y vuelta (RTT).</td>
-                                <td>
-                                    <a href="./ISD/PrimerParcial/index.html">Reporte</a>
-                                    <a href="https://github.com/DanielHernandezMalagon/2026-PS-ISD-HernandezMalagonDaniel/tree/main/ISD/PrimerParcial">Código</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Servidor y cliente TCP</td>
-                                <td>Servidor de eco con el módulo net de Node.js y un cliente que le envía mensajes.</td>
-                                <td>
-                                    <a href="https://github.com/DanielHernandezMalagon/2026-PS-ISD-HernandezMalagonDaniel/tree/main/ISD/PrimerParcial/Servidores">Código</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Calculadora de subneteo</td>
-                                <td>Conversión a binario, FLSM, VLSM y cálculo de la red a la que pertenece una IP.</td>
-                                <td>
-                                    <a href="./ISD/SegundoParcial/Subneteo/index.html">Página web</a>
-                                    <a href="https://github.com/DanielHernandezMalagon/2026-PS-ISD-HernandezMalagonDaniel/tree/main/ISD/SegundoParcial/Subneteo">Código</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+    <header class="encabezado">
+        <div class="encabezado-contenido">
+            <p class="etiqueta">Portafolio de evidencias · 2026</p>
+            <h1>Hernández Malagón Daniel</h1>
+            <p class="subtitulo">Prácticas y ejercicios de las materias PS e ISD: peticiones HTTP, sockets TCP y subneteo de redes IPv4.</p>
         </div>
-    </div>
-</body>
-</html>
+    </header>
+
+    <main class="container">
+        <section class="materia">
+            <div class="materia-encabezado">
+                <span class="codigo">PS</span>
+                <div>
+                    <h2>PS</h2>
+                    <p>Evidencias de la materia</p>
+                </div>
+            </div>
+            <div class="tabla-envoltura">
+                <table class="tablaps">
+                    <thead>
+                        <tr>
+                            <th>Ejercicio</th>
+                            <th>Descripción</th>
+                            <th>Enlaces</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="vacio" colspan="3">Aún no hay ejercicios registrados</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="materia">
+            <div class="materia-encabezado">
+                <span class="codigo">ISD</span>
+                <div>
+                    <h2>ISD</h2>
+                    <p>Evidencias de la materia</p>
+                </div>
+            </div>
+            <div class="tabla-envoltura">
+                <table class="tablaisd">
+                    <thead>
+                        <tr>
+                            <th>Ejercicio</th>
+                            <th>Descripción</th>
+                            <th>Enlaces</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Ejercicio">
+                                <span class="nombre">Primera petición GET</span>
+                                <span class="parcial">1er parcial</span>
+                            </td>
+                            <td data-label="Descripción">Cliente en Node.js que consume la API de talleres con fetch y mide el tiempo de ida y vuelta (RTT).</td>
+                            <td data-label="Enlaces" class="enlaces">
+                                <a class="boton" href="./ISD/PrimerParcial/index.html">Reporte</a>
+                                <a class="boton secundario" href="https://github.com/DanielHernandezMalagon/2026-PS-ISD-HernandezMalagonDaniel/tree/main/ISD/PrimerParcial">Código</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="Ejercicio">
+                                <span class="nombre">Servidor y cliente TCP</span>
+                                <span class="parcial">1er parcial</span>
+                            </td>
+                            <td data-label="Descripción">Servidor de eco con el módulo net de Node.js y un cliente que le envía mensajes.</td>
+                            <td data-label="Enlaces" class="enlaces">
+                                <a class="boton secundario" href="https://github.com/DanielHernandezMalagon/2026-PS-ISD-HernandezMalagonDaniel/tree/main/ISD/PrimerParcial/Servidores">Código</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="Ejercicio">
+                                <span class="nombre">Calculadora de subneteo</span>
+                                <span class="parcial">2do parcial</span>
+                            </td>
+                            <td data-label="Descripción">Conversión a binario, FLSM, VLSM y cálculo de la red a la que pertenece una IP.</td>
+                            <td data-label="Enlaces" class="enlaces">
+                                <a class="boton" href="./ISD/SegundoParcial/Subneteo/index.html">Página web</a>
+                                <a class="boton secundario" href="https://github.com/DanielHernandezMalagon/2026-PS-ISD-HernandezMalagonDaniel/tree/main/ISD/SegundoParcial/Subneteo">Código</a>
